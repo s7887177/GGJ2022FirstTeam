@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: 43b0c616b594a2d489bb1650648de311
+  - enabled: 1
+    path: Assets/Scenes/PeaceScene_1.unity
+    guid: a25ce093d0532e742bfe844e42ab8bf4
   m_configObjects: {}
