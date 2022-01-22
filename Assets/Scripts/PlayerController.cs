@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
         attackColdTime = 1.0f;
         rollingColdTime = 1.0f;
 
-
         isGounding = isMoving = isJumping = stopJumping = false;
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
@@ -63,7 +62,7 @@ public class PlayerController : MonoBehaviour
             bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
 
             if (isMoving = (moveRight ^ moveLeft)){
-                transform.Translate(moveLeft ? -movementSpeed*Time.deltaTime : movementSpeed*Time.deltaTime, 0, 0);
+                transform.Translate(movementSpeed*(moveLeft ? -1 : 1)*Time.deltaTime, 0, 0);
                 GetComponent<SpriteRenderer>().flipX = moveLeft;
             }
 
@@ -121,9 +120,9 @@ public class PlayerController : MonoBehaviour
     }
     
     void Roll(bool moveLeft){
-        isRolling = true;
-        rollingSpeed = (moveLeft ? -movementSpeed : movementSpeed)*3.0f;
-        rollingTime = 0.0f;
         animator.SetTrigger("Roll");
+        isRolling = true;
+        rollingSpeed = movementSpeed*(moveLeft ? -3 : 3);
+        rollingTime = 0.0f;
     }
 } 
