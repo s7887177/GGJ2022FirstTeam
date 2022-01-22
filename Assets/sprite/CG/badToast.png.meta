@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 857ee4e06af69974897c004d63f7781d
+guid: b30a54fbf17883542bc50f88386748d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3043825704180141539
-    second: we_want_war_0
+      213: -9099210932695635523
+    second: badToast_0
   - first:
-      213: 404644241396773912
-    second: we_want_war_1
+      213: 3443077151183593935
+    second: badToast_1
   - first:
-      213: -3150964003150903179
-    second: we_want_war_2
+      213: -2396013422645143205
+    second: badToast_2
   - first:
-      213: 7273337593870297469
-    second: we_want_war_3
+      213: 4841563587071426577
+    second: badToast_3
   - first:
-      213: 4154738604428187456
-    second: we_want_war_4
+      213: 9031715715326318289
+    second: badToast_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,28 +142,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: we_want_war_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ed4cdfd957dd3a20800000000000000
-      internalID: 3043825704180141539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: we_want_war_1
+      name: badToast_0
       rect:
         serializedVersion: 2
         x: 64
@@ -177,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 814bcdc2bc59d9500800000000000000
-      internalID: 404644241396773912
+      spriteID: db9635ccddb19b180800000000000000
+      internalID: -9099210932695635523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: we_want_war_2
+      name: badToast_1
       rect:
         serializedVersion: 2
         x: 128
@@ -198,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 578c5240fe68544d0800000000000000
-      internalID: -3150964003150903179
+      spriteID: fc1ef824d6448cf20800000000000000
+      internalID: 3443077151183593935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: we_want_war_3
+      name: badToast_2
       rect:
         serializedVersion: 2
         x: 192
@@ -219,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d79222e710610f460800000000000000
-      internalID: 7273337593870297469
+      spriteID: b591b2a9c76afbed0800000000000000
+      internalID: -2396013422645143205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: we_want_war_4
+      name: badToast_3
       rect:
         serializedVersion: 2
         x: 256
@@ -240,8 +219,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0475b8b7fb898a930800000000000000
-      internalID: 4154738604428187456
+      spriteID: 110cbd44e60b03340800000000000000
+      internalID: 4841563587071426577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badToast_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6965c4799175d70800000000000000
+      internalID: 9031715715326318289
       vertices: []
       indices: 
       edges: []
@@ -249,7 +249,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ac5d614975f4c3f459762a2bae0b79df
+    spriteID: 58b81d74ac772ed499d2e7588ca098cf
     internalID: 0
     vertices: []
     indices: 
