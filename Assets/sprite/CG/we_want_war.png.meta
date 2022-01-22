@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: bcdad5b8b34aa4248936d39b44e67ae2
+guid: 857ee4e06af69974897c004d63f7781d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1148777941186262651
-    second: level1_enemy_apple_0
+      213: 3043825704180141539
+    second: we_want_war_0
   - first:
-      213: -2668176904167145147
-    second: level1_enemy_apple_1
+      213: 404644241396773912
+    second: we_want_war_1
   - first:
-      213: -7301540661676431028
-    second: level1_enemy_apple_2
+      213: -3150964003150903179
+    second: we_want_war_2
   - first:
-      213: 8937333003076134824
-    second: level1_enemy_apple_3
+      213: 7273337593870297469
+    second: we_want_war_3
+  - first:
+      213: 4154738604428187456
+    second: we_want_war_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -79,7 +82,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -91,7 +94,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -139,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level1_enemy_apple_0
+      name: we_want_war_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 19
-        height: 18
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b763636737741ff00800000000000000
-      internalID: 1148777941186262651
+      spriteID: 3ed4cdfd957dd3a20800000000000000
+      internalID: 3043825704180141539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_1
+      name: we_want_war_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 64
         y: 0
-        width: 21
-        height: 16
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54147350e3bb8fad0800000000000000
-      internalID: -2668176904167145147
+      spriteID: 814bcdc2bc59d9500800000000000000
+      internalID: 404644241396773912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_2
+      name: we_want_war_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 128
         y: 0
-        width: 24
-        height: 14
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c49a4b31477bbaa90800000000000000
-      internalID: -7301540661676431028
+      spriteID: 578c5240fe68544d0800000000000000
+      internalID: -3150964003150903179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_3
+      name: we_want_war_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 192
         y: 0
-        width: 21
-        height: 16
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +219,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a76ab7a309c70c70800000000000000
-      internalID: 8937333003076134824
+      spriteID: d79222e710610f460800000000000000
+      internalID: 7273337593870297469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: we_want_war_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0475b8b7fb898a930800000000000000
+      internalID: 4154738604428187456
       vertices: []
       indices: 
       edges: []
@@ -225,7 +249,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 505681434d2afa64a9c8a3b0261ea012
+    spriteID: ac5d614975f4c3f459762a2bae0b79df
     internalID: 0
     vertices: []
     indices: 

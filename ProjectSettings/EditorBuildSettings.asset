@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PeaceScene_1.unity
     guid: a25ce093d0532e742bfe844e42ab8bf4
+  - enabled: 1
+    path: Assets/Scenes/WarScene_1.unity
+    guid: a218a52ec4325b440be42f50390a0bcc
+  - enabled: 1
+    path: Assets/Scenes/WarScene_2.unity
+    guid: 0275b7bb65cd5054f95f015f224184c5
   m_configObjects: {}

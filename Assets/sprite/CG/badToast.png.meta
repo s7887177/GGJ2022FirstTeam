@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: bcdad5b8b34aa4248936d39b44e67ae2
+guid: b30a54fbf17883542bc50f88386748d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1148777941186262651
-    second: level1_enemy_apple_0
+      213: -9099210932695635523
+    second: badToast_0
   - first:
-      213: -2668176904167145147
-    second: level1_enemy_apple_1
+      213: 3443077151183593935
+    second: badToast_1
   - first:
-      213: -7301540661676431028
-    second: level1_enemy_apple_2
+      213: -2396013422645143205
+    second: badToast_2
   - first:
-      213: 8937333003076134824
-    second: level1_enemy_apple_3
+      213: 4841563587071426577
+    second: badToast_3
+  - first:
+      213: 9031715715326318289
+    second: badToast_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -79,7 +82,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -91,7 +94,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -139,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level1_enemy_apple_0
+      name: badToast_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 64
         y: 0
-        width: 19
-        height: 18
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b763636737741ff00800000000000000
-      internalID: 1148777941186262651
+      spriteID: db9635ccddb19b180800000000000000
+      internalID: -9099210932695635523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_1
+      name: badToast_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 128
         y: 0
-        width: 21
-        height: 16
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54147350e3bb8fad0800000000000000
-      internalID: -2668176904167145147
+      spriteID: fc1ef824d6448cf20800000000000000
+      internalID: 3443077151183593935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_2
+      name: badToast_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 192
         y: 0
-        width: 24
-        height: 14
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c49a4b31477bbaa90800000000000000
-      internalID: -7301540661676431028
+      spriteID: b591b2a9c76afbed0800000000000000
+      internalID: -2396013422645143205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_3
+      name: badToast_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 256
         y: 0
-        width: 21
-        height: 16
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +219,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a76ab7a309c70c70800000000000000
-      internalID: 8937333003076134824
+      spriteID: 110cbd44e60b03340800000000000000
+      internalID: 4841563587071426577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badToast_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6965c4799175d70800000000000000
+      internalID: 9031715715326318289
       vertices: []
       indices: 
       edges: []
@@ -225,7 +249,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 505681434d2afa64a9c8a3b0261ea012
+    spriteID: 58b81d74ac772ed499d2e7588ca098cf
     internalID: 0
     vertices: []
     indices: 

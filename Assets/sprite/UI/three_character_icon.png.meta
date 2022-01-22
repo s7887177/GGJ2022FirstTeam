@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: bcdad5b8b34aa4248936d39b44e67ae2
+guid: 1ab8fdf5fc052ca449420629d771570d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1148777941186262651
-    second: level1_enemy_apple_0
+      213: -4167774762788797121
+    second: three_character_icon_0
   - first:
-      213: -2668176904167145147
-    second: level1_enemy_apple_1
+      213: 872924470949670750
+    second: three_character_icon_1
   - first:
-      213: -7301540661676431028
-    second: level1_enemy_apple_2
-  - first:
-      213: 8937333003076134824
-    second: level1_enemy_apple_3
+      213: -3966566442920583561
+    second: three_character_icon_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level1_enemy_apple_0
+      name: three_character_icon_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 19
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b763636737741ff00800000000000000
-      internalID: 1148777941186262651
+      spriteID: f35c2206fe61926c0800000000000000
+      internalID: -4167774762788797121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_1
+      name: three_character_icon_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 32
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54147350e3bb8fad0800000000000000
-      internalID: -2668176904167145147
+      spriteID: e5f63be6e204d1c00800000000000000
+      internalID: 872924470949670750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_2
+      name: three_character_icon_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 64
         y: 0
-        width: 24
-        height: 14
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,29 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c49a4b31477bbaa90800000000000000
-      internalID: -7301540661676431028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: level1_enemy_apple_3
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 0
-        width: 21
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a76ab7a309c70c70800000000000000
-      internalID: 8937333003076134824
+      spriteID: 77edbbff5dce3f8c0800000000000000
+      internalID: -3966566442920583561
       vertices: []
       indices: 
       edges: []
@@ -225,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 505681434d2afa64a9c8a3b0261ea012
+    spriteID: 4b260521248592642be53a69eb2c19c4
     internalID: 0
     vertices: []
     indices: 
