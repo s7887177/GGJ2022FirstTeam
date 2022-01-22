@@ -1,41 +1,25 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: 30344a5130cf8c349a84c81c6cf2c3c1
-=======
-guid: 4c9d42eb5a3fc57448f7ba5e63a8a024
->>>>>>> Stashed changes
+guid: 97d55e2b3fd38f940aa2cd820531c97d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9094734800969629820
-    second: main_character_0
+      213: 1809368318400447816
+    second: level1_enemy_pan_idle_0
   - first:
-      213: 4345679706368398392
-    second: main_character_1
+      213: 2194165234491847977
+    second: level1_enemy_pan_idle_1
   - first:
-      213: 7835032779756320859
-    second: main_character_2
+      213: 5526312941001083802
+    second: level1_enemy_pan_idle_2
   - first:
-      213: 5923596788570943504
-    second: main_character_3
+      213: -6578077791745067248
+    second: level1_enemy_pan_idle_3
   - first:
-      213: -1143383343899197466
-    second: main_character_4
+      213: -1670642121344427689
+    second: level1_enemy_pan_idle_4
   - first:
-      213: -8897805811484987368
-    second: main_character_5
-  - first:
-      213: -1964432641445438021
-    second: main_character_6
-  - first:
-      213: -1112816430539965256
-    second: main_character_7
-  - first:
-      213: 5976840040086245903
-    second: main_character_8
-  - first:
-      213: -4936964430499598731
-    second: main_character_9
+      213: 6917897435590006770
+    second: level1_enemy_pan_idle_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,11 +85,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 8192
     resizeAlgorithm: 0
-<<<<<<< Updated upstream
     textureFormat: -1
-=======
-    textureFormat: 4
->>>>>>> Stashed changes
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -117,11 +97,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
-<<<<<<< Updated upstream
     textureFormat: -1
-=======
-    textureFormat: 4
->>>>>>> Stashed changes
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -169,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main_character_0
+      name: level1_enemy_pan_idle_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 19
-        height: 17
+        x: 2
+        y: 7
+        width: 28
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48f72dd62e209c180800000000000000
-      internalID: -9094734800969629820
+      spriteID: 845ca1e26ea2c1910800000000000000
+      internalID: 1809368318400447816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_1
+      name: level1_enemy_pan_idle_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
-        width: 19
-        height: 16
+        x: 33
+        y: 10
+        width: 28
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83456b52ba4fe4c30800000000000000
-      internalID: 4345679706368398392
+      spriteID: 925f564d7ad337e10800000000000000
+      internalID: 2194165234491847977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_2
+      name: level1_enemy_pan_idle_2
       rect:
         serializedVersion: 2
-        x: 70
-        y: 0
-        width: 20
-        height: 16
+        x: 67
+        y: 9
+        width: 28
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b58bae82dc0abbc60800000000000000
-      internalID: 7835032779756320859
+      spriteID: a9b8306175861bc40800000000000000
+      internalID: 5526312941001083802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_3
+      name: level1_enemy_pan_idle_3
       rect:
         serializedVersion: 2
-        x: 104
-        y: 0
-        width: 17
-        height: 17
+        x: 97
+        y: 10
+        width: 28
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0107a6705e7d43250800000000000000
-      internalID: 5923596788570943504
+      spriteID: 017362eb919f5b4a0800000000000000
+      internalID: -6578077791745067248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_4
+      name: level1_enemy_pan_idle_4
       rect:
         serializedVersion: 2
-        x: 136
-        y: 0
-        width: 16
-        height: 16
+        x: 132
+        y: 10
+        width: 28
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ef3ac818e2e120f0800000000000000
-      internalID: -1143383343899197466
+      spriteID: 759d57297dfa0d8e0800000000000000
+      internalID: -1670642121344427689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_character_5
+      name: level1_enemy_pan_idle_5
       rect:
         serializedVersion: 2
-        x: 168
-        y: 0
-        width: 17
-        height: 17
+        x: 161
+        y: 11
+        width: 28
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,92 +264,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 810f70ec1c4a48480800000000000000
-      internalID: -8897805811484987368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_6
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 0
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbd567dabeeecb4e0800000000000000
-      internalID: -1964432641445438021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_7
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 0
-        width: 19
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bc72753a5b7e80f0800000000000000
-      internalID: -1112816430539965256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_8
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 0
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f021cac895002f250800000000000000
-      internalID: 5976840040086245903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main_character_9
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 0
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57e2553f1016c7bb0800000000000000
-      internalID: -4936964430499598731
+      spriteID: 2f79de8a01f410060800000000000000
+      internalID: 6917897435590006770
       vertices: []
       indices: 
       edges: []
@@ -381,7 +273,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 9982db10590e89e4298bb650e0536d1d
     internalID: 0
     vertices: []
     indices: 
