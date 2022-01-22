@@ -6,15 +6,12 @@
       "source": "builtin",
       "dependencies": {}
     },
-
-
     "com.unity.2d.tilemap": {
       "version": "1.0.0",
       "depth": 0,
       "source": "builtin",
       "dependencies": {}
     },
-
     "com.unity.collab-proxy": {
       "version": "1.15.7",
       "depth": 0,
@@ -90,13 +87,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.universal": {
-      "version": "10.8.1",
+      "version": "10.4.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.1.0",
-        "com.unity.render-pipelines.core": "10.8.1",
-        "com.unity.shadergraph": "10.8.1"
+        "com.unity.render-pipelines.core": "10.4.0",
+        "com.unity.shadergraph": "10.4.0"
       },
       "url": "https://packages.unity.com"
     },
