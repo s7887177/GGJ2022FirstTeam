@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: bcdad5b8b34aa4248936d39b44e67ae2
+guid: be9458f8eb53ce54ca005bdb43880df3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1148777941186262651
-    second: level1_enemy_apple_0
+      213: 8078483185982380327
+    second: main_character_attack_0
   - first:
-      213: -2668176904167145147
-    second: level1_enemy_apple_1
+      213: 3611052203510726132
+    second: main_character_attack_1
   - first:
-      213: -7301540661676431028
-    second: level1_enemy_apple_2
+      213: 1639533423239783021
+    second: main_character_attack_2
   - first:
-      213: 8937333003076134824
-    second: level1_enemy_apple_3
+      213: 4469658180528321137
+    second: main_character_attack_3
+  - first:
+      213: -5384040962562459434
+    second: main_character_attack_4
+  - first:
+      213: -5454061213670493634
+    second: main_character_attack_5
+  - first:
+      213: 4986316444567108953
+    second: main_character_attack_6
+  - first:
+      213: 7592936500224756281
+    second: main_character_attack_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -79,7 +91,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -91,7 +103,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -135,28 +147,16 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level1_enemy_apple_0
+      name: main_character_attack_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 3
         y: 0
-        width: 19
+        width: 22
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -165,20 +165,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b763636737741ff00800000000000000
-      internalID: 1148777941186262651
+      spriteID: 7291270f7a98c1070800000000000000
+      internalID: 8078483185982380327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_1
+      name: main_character_attack_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 35
+        y: 0
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdf5afc8d80d1230800000000000000
+      internalID: 3611052203510726132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_attack_2
+      rect:
+        serializedVersion: 2
+        x: 67
         y: 0
         width: 21
-        height: 16
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54147350e3bb8fad0800000000000000
-      internalID: -2668176904167145147
+      spriteID: d62669936fac0c610800000000000000
+      internalID: 1639533423239783021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_2
+      name: main_character_attack_3
       rect:
         serializedVersion: 2
-        x: 70
+        x: 99
         y: 0
-        width: 24
-        height: 14
+        width: 23
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c49a4b31477bbaa90800000000000000
-      internalID: -7301540661676431028
+      spriteID: 1723fc51f6a670e30800000000000000
+      internalID: 4469658180528321137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_3
+      name: main_character_attack_4
       rect:
         serializedVersion: 2
-        x: 103
+        x: 131
         y: 0
-        width: 21
-        height: 16
+        width: 27
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +249,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a76ab7a309c70c70800000000000000
-      internalID: 8937333003076134824
+      spriteID: 6d8ff4a354b0845b0800000000000000
+      internalID: -5384040962562459434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_attack_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e323fe719384f44b0800000000000000
+      internalID: -5454061213670493634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_attack_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d7c104364f23540800000000000000
+      internalID: 4986316444567108953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_character_attack_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a8ef194878f5960800000000000000
+      internalID: 7592936500224756281
       vertices: []
       indices: 
       edges: []
@@ -237,7 +321,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 505681434d2afa64a9c8a3b0261ea012
+    spriteID: 0b731d4cba7981d47bf99699da004153
     internalID: 0
     vertices: []
     indices: 

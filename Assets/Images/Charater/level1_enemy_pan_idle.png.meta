@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: bcdad5b8b34aa4248936d39b44e67ae2
+guid: e9b7cb013343a34478419c3dc5e02913
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1148777941186262651
-    second: level1_enemy_apple_0
+      213: 1809368318400447816
+    second: level1_enemy_pan_idle_0
   - first:
-      213: -2668176904167145147
-    second: level1_enemy_apple_1
+      213: 2194165234491847977
+    second: level1_enemy_pan_idle_1
   - first:
-      213: -7301540661676431028
-    second: level1_enemy_apple_2
+      213: 5526312941001083802
+    second: level1_enemy_pan_idle_2
   - first:
-      213: 8937333003076134824
-    second: level1_enemy_apple_3
+      213: -6578077791745067248
+    second: level1_enemy_pan_idle_3
+  - first:
+      213: -1670642121344427689
+    second: level1_enemy_pan_idle_4
+  - first:
+      213: 6917897435590006770
+    second: level1_enemy_pan_idle_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -135,29 +141,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level1_enemy_apple_0
+      name: level1_enemy_pan_idle_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 0
-        width: 19
-        height: 18
+        x: 2
+        y: 7
+        width: 28
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,40 +159,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b763636737741ff00800000000000000
-      internalID: 1148777941186262651
+      spriteID: 845ca1e26ea2c1910800000000000000
+      internalID: 1809368318400447816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_1
+      name: level1_enemy_pan_idle_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
-        width: 21
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54147350e3bb8fad0800000000000000
-      internalID: -2668176904167145147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: level1_enemy_apple_2
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 0
-        width: 24
+        x: 33
+        y: 10
+        width: 28
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -207,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c49a4b31477bbaa90800000000000000
-      internalID: -7301540661676431028
+      spriteID: 925f564d7ad337e10800000000000000
+      internalID: 2194165234491847977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1_enemy_apple_3
+      name: level1_enemy_pan_idle_2
       rect:
         serializedVersion: 2
-        x: 103
-        y: 0
-        width: 21
-        height: 16
+        x: 67
+        y: 9
+        width: 28
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +201,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a76ab7a309c70c70800000000000000
-      internalID: 8937333003076134824
+      spriteID: a9b8306175861bc40800000000000000
+      internalID: 5526312941001083802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_enemy_pan_idle_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 10
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017362eb919f5b4a0800000000000000
+      internalID: -6578077791745067248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_enemy_pan_idle_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 10
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759d57297dfa0d8e0800000000000000
+      internalID: -1670642121344427689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_enemy_pan_idle_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 11
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f79de8a01f410060800000000000000
+      internalID: 6917897435590006770
       vertices: []
       indices: 
       edges: []
@@ -237,7 +273,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 505681434d2afa64a9c8a3b0261ea012
+    spriteID: 9982db10590e89e4298bb650e0536d1d
     internalID: 0
     vertices: []
     indices: 
