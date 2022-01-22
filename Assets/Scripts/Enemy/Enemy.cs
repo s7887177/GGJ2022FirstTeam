@@ -6,13 +6,15 @@ public class Enemy : MonoBehaviour
 {
     [field: SerializeField]
     public EnemyStat stat { get; private set; }
+    public float wanderLeft = 0;
+    public float wanderRight = 5;
 
     private IState state;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.state = new Wander(this, 0, 5);
+        this.state = new Wander(this, this.wanderLeft, this.wanderRight);
     }
 
     // Update is called once per frame
