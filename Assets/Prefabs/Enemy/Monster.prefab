@@ -418,10 +418,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2881254342191600853}
     m_Modifications:
-    - target: {fileID: 803904025842301839, guid: 0a3656b7979f59243bc21fb3c16022f2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 803904025908976384, guid: 0a3656b7979f59243bc21fb3c16022f2, type: 3}
       propertyPath: m_Name
       value: Apple
@@ -470,38 +466,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3179996656938977640, guid: 0a3656b7979f59243bc21fb3c16022f2, type: 3}
-      propertyPath: m_EdgeRadius
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7381558628999609282, guid: 0a3656b7979f59243bc21fb3c16022f2, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3656b7979f59243bc21fb3c16022f2, type: 3}
---- !u!1 &3230294779185388892 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 803904025908976384, guid: 0a3656b7979f59243bc21fb3c16022f2, type: 3}
-  m_PrefabInstance: {fileID: 2881254343853164124}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3230294779185388894 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 803904025908976386, guid: 0a3656b7979f59243bc21fb3c16022f2, type: 3}
   m_PrefabInstance: {fileID: 2881254343853164124}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2881254343575061158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3230294779185388892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93836c4088ab1cb4192490d31ea5a490, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <stat>k__BackingField: {fileID: 11400000, guid: e0a3ece9bf9ae604d80e3b78c775aba0, type: 2}
-  wanderLeft: 22
-  wanderRight: 28
