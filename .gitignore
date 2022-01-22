@@ -7,6 +7,7 @@
 /[Tt]emp/
 /[Oo]bj/
 /Logs/
+/[Uu]ser[Ss]ettings/
 # unity ignore file
 *.csproj
 *.unityproj
