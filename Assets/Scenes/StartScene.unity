@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 561209854}
   - component: {fileID: 561209853}
   - component: {fileID: 561209857}
+  - component: {fileID: 561209858}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -323,7 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 197.988, y: -57.767776}
+  scrollPos: {x: 30.988007, y: -57.767776}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -334,8 +335,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 561209841}
+  selectedCommands:
+  - {fileID: 561209858}
   variables:
   - {fileID: 561209851}
   description: 
@@ -465,7 +468,8 @@ MonoBehaviour:
   blockName: War
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 561209858}
   suppressAllAutoSelections: 0
 --- !u!114 &561209842
 MonoBehaviour:
@@ -819,6 +823,25 @@ MonoBehaviour:
   _sceneName:
     stringRef: {fileID: 0}
     stringVal: PeaceScene_1
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &561209858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561209833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 23
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: WarScene_1
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!1 &668146463
@@ -1464,6 +1487,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9012645587249083971, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
+      propertyPath: nameColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012645587249083971, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
+      propertyPath: nameColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012645587249083971, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
+      propertyPath: nameColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012645587800461121, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
+      propertyPath: nameColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012645587800461121, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
+      propertyPath: nameColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012645587800461121, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
+      propertyPath: nameColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9012645587924666678, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
       propertyPath: m_Name
       value: Characters
@@ -1511,6 +1558,18 @@ PrefabInstance:
     - target: {fileID: 9012645587924666679, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012645588761477917, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
+      propertyPath: nameColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012645588761477917, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
+      propertyPath: nameColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012645588761477917, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
+      propertyPath: nameColor.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
