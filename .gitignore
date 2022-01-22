@@ -1,3 +1,6 @@
+.vs/
+.vscode/
+
 # unity ignore dir
 /[Bb]in/
 /[Ll]ibrary/
