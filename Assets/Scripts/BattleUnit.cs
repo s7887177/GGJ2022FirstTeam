@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 namespace Feng.Battle
 {
@@ -15,6 +17,7 @@ namespace Feng.Battle
         [SerializeField] int currentHp;
         [SerializeField] string targetTag;
         public int Atk;
+
 
         float hpPresentage => (float)currentHp / (float)maxHp;
 
@@ -48,7 +51,10 @@ namespace Feng.Battle
 
         public void OnDie()
         {
-            GameObject.Destroy(this.gameObject);
+           
+
+            transform.DOScale(Vector3.zero,1).OnComplete(() => GameObject.Destroy(this.gameObject));
+
         }
     }
 
