@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 64.93202, y: -140.78864}
+  scrollPos: {x: 44.384083, y: -36.67907}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 406
@@ -410,8 +410,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 835264422}
-  selectedCommands: []
+  - {fileID: 835264398}
+  selectedCommands:
+  - {fileID: 835264396}
   variables:
   - {fileID: 835264399}
   description: 
@@ -493,7 +494,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &835264383
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -828,7 +829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  storyText: "\u56DE\u5230\u5BB6\u9109\u5F8C\uFF0C\u4F60\u767C\u73FE\u8D8A\u4F86\u8D8A\u5410\u53F8\u8650\u5F85\u4EBA\u985E\u7684\u884C\u70BA\uFF0C\u4F60\u5BE6\u5728\u770B\u4E0D\u4E0B\u53BB\uFF0C\u65BC\u662F\u767C\u8D77\u8857\u982D\u904B\u52D5\uFF0C\u6C92\u60F3\u5230\u8207\u5176\u4ED6\u5410\u53F8\u767C\u751F\u885D\u7A81\u3002"
+  storyText: "\u53EF\u662F\u5F8C\u4F86\uFF0C\u4F60\u767C\u73FE\u8D8A\u4F86\u8D8A\u5410\u53F8\u8650\u5F85\u4EBA\u985E\u7684\u884C\u70BA\uFF0C\u4F60\u5BE6\u5728\u770B\u4E0D\u4E0B\u53BB\uFF0C\u65BC\u662F\u767C\u8D77\u8857\u982D\u904B\u52D5\uFF0C\u6C92\u60F3\u5230\u8207\u5176\u4ED6\u5410\u53F8\u767C\u751F\u885D\u7A81\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -870,14 +871,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 276.39575
+    x: 275.02588
     y: 161.84492
-    width: 141.78079
+    width: 102.05478
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 35
-  blockName: Return From War
+  blockName: From War
   description: 
   eventHandler: {fileID: 835264410}
   commandList:
@@ -1148,7 +1149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 835264398}
   suppressBlockAutoSelect: 0
-  message: Return From War
+  message: From War
 --- !u!114 &835264411
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1571,7 +1572,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &835264431
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1588,7 +1589,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: ff6738adfb3eaef4fb4aba07ab55e966, type: 3}
 --- !u!114 &835264432
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1606,7 +1607,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &835264433
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
