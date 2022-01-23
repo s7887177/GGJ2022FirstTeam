@@ -323,6 +323,7 @@ GameObject:
   - component: {fileID: 835264431}
   - component: {fileID: 835264432}
   - component: {fileID: 835264433}
+  - component: {fileID: 835264434}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -410,9 +411,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 835264398}
+  - {fileID: 835264382}
   selectedCommands:
-  - {fileID: 835264396}
+  - {fileID: 835264386}
   variables:
   - {fileID: 835264399}
   description: 
@@ -453,7 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 208.95744
+    x: 203.47798
     y: 288.234
     width: 70.54794
     height: 40
@@ -871,8 +872,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 275.02588
-    y: 161.84492
+    x: 276.39575
+    y: 163.21478
     width: 102.05478
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -884,6 +885,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 835264397}
   - {fileID: 835264396}
+  - {fileID: 835264434}
   suppressAllAutoSelections: 0
 --- !u!114 &835264399
 MonoBehaviour:
@@ -1622,6 +1624,25 @@ MonoBehaviour:
   images:
   - {fileID: 1240714016}
   sprite: {fileID: 21300000, guid: 66b8ff97913c6f440bedc939441b9a4f, type: 3}
+--- !u!114 &835264434
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835264377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43743931d28f43f89eced820d907351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 70
+  indentLevel: 0
+  messageTarget: 0
+  _message:
+    stringRef: {fileID: 0}
+    stringVal: Battle Start
+  messageOLD: 
 --- !u!1 &846083500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,6 +1949,10 @@ PrefabInstance:
       propertyPath: nameColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9012645587800461121, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
+      propertyPath: portraits.Array.data[0]
+      value: 
+      objectReference: {fileID: -3966566442920583561, guid: 1ab8fdf5fc052ca449420629d771570d, type: 3}
     - target: {fileID: 9012645587924666678, guid: 4e91eaee8eedab2468d6d04f635b05f0, type: 3}
       propertyPath: m_Name
       value: Characters
