@@ -476,6 +476,7 @@ GameObject:
   - component: {fileID: 561209860}
   - component: {fileID: 561209855}
   - component: {fileID: 561209867}
+  - component: {fileID: 561209868}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -514,7 +515,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 109
     y: 86
-    width: 77
+    width: 78.723404
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -548,11 +549,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 104.69111, y: -50.414574}
+  scrollPos: {x: 127.263306, y: -42.155487}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -561,8 +562,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 561209835}
-  selectedCommands:
-  - {fileID: 561209867}
+  selectedCommands: []
   variables:
   - {fileID: 561209851}
   description: 
@@ -657,7 +657,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 210.30768
     y: 263.81314
-    width: 86
+    width: 88.29787
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -684,7 +684,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 13.79121
     y: 262.21973
-    width: 72
+    width: 72.34042
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -761,9 +761,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 122
+    x: 121
     y: 227
-    width: 71
+    width: 71.276596
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -779,6 +779,7 @@ MonoBehaviour:
   - {fileID: 561209838}
   - {fileID: 561209842}
   - {fileID: 561209839}
+  - {fileID: 561209868}
   suppressAllAutoSelections: 0
 --- !u!114 &561209845
 MonoBehaviour:
@@ -832,7 +833,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 93
     y: 151.93617
-    width: 113
+    width: 117.02127
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -909,7 +910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: LoadSceneMessage
-  value: From Kichen
+  value: From Kitchen
 --- !u!114 &561209852
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -983,7 +984,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &561209855
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1090,7 +1091,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &561209860
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1225,7 +1226,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &561209866
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1246,7 +1247,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &561209867
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1258,7 +1259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 0
-  storyText: "\u592A\u53EF\u60E1\u4E86\uFF01\u6211\u8981\u53CD\u6297\uFF01"
+  storyText: "\uFF08\u4EBA\u985E\u5403\u5410\u53F8\uFF09\r\n\u4F46\u5410\u53F8\u537B...\u6210\u4E86\u4EBA\u985E\u7684\u65E9\u9910\u3002"
   description: 
   character: {fileID: 1673818451}
   portrait: {fileID: 0}
@@ -1271,6 +1272,22 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &561209868
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561209833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bef7966140464bd5a3ef4da2ff236b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  key: LoadSceneMessage
+  variable: {fileID: 561209851}
 --- !u!1 &668146463
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,6 +1984,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1072646462}
     m_Modifications:
+    - target: {fileID: 3561045069586405656, guid: fb1bf902eba9e19498320735cb0d42b8, type: 3}
+      propertyPath: targetTag
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5361411139857724618, guid: fb1bf902eba9e19498320735cb0d42b8, type: 3}
       propertyPath: m_Name
       value: Stage0
