@@ -7,6 +7,13 @@ namespace Feng.Battle
     public class HealthBarUI : MonoBehaviour
     {
         [SerializeField] Image image;
+        [SerializeField] private Canvas canvas;
+
+        private void Start()
+        {
+            this.canvas.worldCamera = Camera.main;
+        }
+
         public void UpdateHealthBarUI(float percentage)
         {
             if (percentage < 0 || percentage > 1)
