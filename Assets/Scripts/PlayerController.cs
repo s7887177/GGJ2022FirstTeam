@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         minJumpVelocity = 6.0f;
         maxJumpVelocity = 7.0f;
         jumpAcceleration = 15.0f;
-        attackDamage = 3.0f;
+        attackDamage = 10.0f;
         attackColdTime = 1.0f;
         rollingColdTime = 1.0f;
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 namespace Feng.Battle
 {
@@ -7,6 +8,7 @@ namespace Feng.Battle
     public class HealthBarUI : MonoBehaviour
     {
         [SerializeField] Image image;
+        [SerializeField] Image image2;
         [SerializeField] private Canvas canvas;
 
         private void Start()
@@ -20,8 +22,13 @@ namespace Feng.Battle
             {
                 throw new PercentageOutOfRangeException();
             }
-            image.fillAmount = percentage;
+
+            float current = image.fillAmount;
+            image.DOFillAmount(percentage, 0.05f);
+            image2.DOFillAmount( percentage, 0.5f );
             image.color = new Color(1 - percentage, percentage, 0);
+
+
         }
     }
 }
