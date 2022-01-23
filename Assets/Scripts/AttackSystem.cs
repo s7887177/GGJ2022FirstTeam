@@ -13,7 +13,12 @@ namespace Feng.Battle
 
         public void PerformAttack(int atk, Bounds position, string targetTag)
         {
-            var damagers = FindBattleUnitInRange(position).Where(damager => damager.tag == targetTag);
+
+            var damagers = FindBattleUnitInRange(position).Where(damager =>
+            {
+                print(damager.tag);
+                return damager.tag == targetTag;
+            });
             foreach (var damager in damagers)
             {
                 damager.OnDamage(atk);

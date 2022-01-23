@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 namespace Feng.Battle
 {
+
     public class BattleUnit : MonoBehaviour
     {
         [SerializeField] public Collider2D attackRange;
@@ -22,11 +24,11 @@ namespace Feng.Battle
         }
         void Update()
         {
-            Debug.Log(this.name);
             healthBarUI.UpdateHealthBarUI(hpPresentage);
         }
         public void PerformAttack()
         {
+            print(targetTag);
             AttackSystem.instance.PerformAttack(this.Atk, this.attackRange.bounds, targetTag);
         }
 
