@@ -1,3 +1,4 @@
+using Feng.Battle;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,6 +29,11 @@ public class PlayerController : MonoBehaviour
     public AudioSource audioSource;
     Animator animator;
     Rigidbody2D rigidbody;
+
+    public  Collider2D rightAttackRange;
+    public Collider2D leftAttackRange;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,40 +57,48 @@ public class PlayerController : MonoBehaviour
         rollingTime += Time.deltaTime;
         attackTime += Time.deltaTime;
 
-        if(isRolling){
-            transform.Translate(rollingSpeed*Time.deltaTime, 0, 0);
+        if (isRolling) {
+            transform.Translate(rollingSpeed * Time.deltaTime, 0, 0);
 
-            if(rollingTime > 0.3f)
+            if (rollingTime > 0.3f)
                 isRolling = false;
         }
-        else{
+        else {
             bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
             bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
 
-            if (isMoving = (moveRight ^ moveLeft)){
-                transform.Translate(movementSpeed*(moveLeft ? -1 : 1)*Time.deltaTime, 0, 0);
+            if (isMoving = (moveRight ^ moveLeft)) {
+                transform.Translate(movementSpeed * (moveLeft ? -1 : 1) * Time.deltaTime, 0, 0);
                 GetComponent<SpriteRenderer>().flipX = moveLeft;
             }
 
             if (Input.GetKey(KeyCode.S) && isMoving && !isJumping && rollingTime > rollingColdTime)
                 Roll(moveLeft);
-            
+
             else if (Input.GetKey(KeyCode.Space) && isGounding)
                 Jump();
-            
+
             else if (Input.GetKey(KeyCode.J) && attackTime > attackColdTime)
                 Attack();
 
-
-            if(isJumping)
+            if (isJumping)
             {  // Jumping Process
-                if(!stopJumping)
+                if (!stopJumping)
                 {
-                    rigidbody.velocity = new Vector2(0, jumpVelocity += jumpAcceleration*Time.deltaTime);
+                    rigidbody.velocity = new Vector2(0, jumpVelocity += jumpAcceleration * Time.deltaTime);
                     stopJumping = (jumpVelocity >= maxJumpVelocity || !Input.GetKey(KeyCode.Space));
                 }
-                else if(isGounding)
+                else if (isGounding)
                     isJumping = stopJumping = false;
+            }
+            if (moveLeft)
+            {
+                GetComponent<BattleUnit>().attackRange = leftAttackRange;
+            }
+            else if (moveRight)
+            {
+                GetComponent<BattleUnit>().attackRange = rightAttackRange;
+
             }
         }
 
@@ -111,6 +125,7 @@ public class PlayerController : MonoBehaviour
     void Attack(){
         animator.SetTrigger("Attack");
         attackTime = 0.0f;
+        GetComponent<BattleUnit>().PerformAttack();
     }
 
     void Jump(){
