@@ -485,6 +485,7 @@ GameObject:
   - component: {fileID: 561209871}
   - component: {fileID: 561209870}
   - component: {fileID: 561209869}
+  - component: {fileID: 561209877}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -569,8 +570,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 561209847}
-  selectedCommands: []
+  - {fileID: 561209876}
+  selectedCommands:
+  - {fileID: 561209877}
   variables:
   - {fileID: 561209851}
   description: 
@@ -1475,9 +1477,40 @@ MonoBehaviour:
   - {fileID: 561209871}
   - {fileID: 561209875}
   - {fileID: 561209874}
+  - {fileID: 561209877}
   - {fileID: 561209873}
   - {fileID: 561209872}
   suppressAllAutoSelections: 0
+--- !u!114 &561209877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561209833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6dd8d3a780f4d1ea772e3daf10c372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  targetObjects:
+  - {fileID: 687343961}
+  tweenType: 3
+  waitUntilFinished:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  fadeMode: 0
+  targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  targetAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 1
 --- !u!1 &668146463
 GameObject:
   m_ObjectHideFlags: 0
