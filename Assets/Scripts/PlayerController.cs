@@ -5,28 +5,31 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float movementSpeed;
-    public float minJumpVelocity;
-    public float maxJumpVelocity;
-    public float jumpAcceleration;
-    public float attackDamage;
-    public float attackTime;
-    public float attackColdTime;
-    public float rollingColdTime;
-    public float health;
+    public float movementSpeed = 4.0f;
+    public float minJumpVelocity = 3.0f;
+    public float maxJumpVelocity = 6.0f;
+    public float jumpAcceleration = 20.0f;
+    public float attackDamage = 3.0f;
+    public float attackColdTime = 0.5f;
+    public float rollingColdTime = 1.0f;
 
-    public bool isJumping;
-    public bool isMoving;
-    public bool isGounding;
-    public bool isRolling;
+    public AudioSource attackAudio;
+    public AudioSource rollingAudio;
+
+    
+    bool isJumping;
+    bool isMoving;
+    bool isGounding;
+    bool isRolling;
+    public bool isFreezing;
 
     bool stopJumping;
     float rollingSpeed;
-    [SerializeField] float rollingTime;
+    float attackTime;
+    float rollingTime;
+    float stiffTime;
     [SerializeField] float jumpVelocity;
 
-
-    public AudioSource audioSource;
     Animator animator;
     Rigidbody2D rigidbody;
 
@@ -37,63 +40,45 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        movementSpeed = 4.0f;
-        minJumpVelocity = 6.0f;
-        maxJumpVelocity = 7.0f;
-        jumpAcceleration = 15.0f;
-        attackDamage = 10.0f;
-        attackColdTime = 1.0f;
-        rollingColdTime = 1.0f;
-
-        isGounding = isMoving = isJumping = stopJumping = false;
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
-        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(isFreezing)
+            return;
+
         rollingTime += Time.deltaTime;
         attackTime += Time.deltaTime;
+        stiffTime += Time.deltaTime;
 
-        if (isRolling)
-        {
-            transform.Translate(rollingSpeed * Time.deltaTime, 0, 0);
+        if(isRolling){
+            transform.Translate(rollingSpeed*Time.deltaTime, 0, 0);
 
-            if (rollingTime > 0.3f)
+            if(rollingTime > 0.3f)
                 isRolling = false;
         }
-        else
-        {
+
+        else if(stiffTime >= 0.0f){
             bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
             bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
 
-            if (isMoving = (moveRight ^ moveLeft))
-            {
-                transform.Translate(movementSpeed * (moveLeft ? -1 : 1) * Time.deltaTime, 0, 0);
+            if (isMoving = (moveRight ^ moveLeft)){
+                transform.Translate(movementSpeed*(moveLeft ? -1 : 1)*Time.deltaTime, 0, 0);
                 GetComponent<SpriteRenderer>().flipX = moveLeft;
             }
 
-            if (Input.GetKey(KeyCode.S) && isMoving && !isJumping && rollingTime > rollingColdTime)
+            if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && isMoving && !isJumping && rollingTime > rollingColdTime)
                 Roll(moveLeft);
-
-            else if (Input.GetKey(KeyCode.Space) && isGounding)
+            
+            else if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) && isGounding)
                 Jump();
-
-            else if (Input.GetKey(KeyCode.J) && attackTime > attackColdTime)
+            
+            else if ((Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.Mouse0)) && attackTime > attackColdTime)
                 Attack();
 
-            if (isJumping)
-            {  // Jumping Process
-                if (!stopJumping)
-                {
-                    rigidbody.velocity = new Vector2(0, jumpVelocity += jumpAcceleration * Time.deltaTime);
-                    stopJumping = (jumpVelocity >= maxJumpVelocity || !Input.GetKey(KeyCode.Space));
-                }
-                else if (isGounding)
-                    isJumping = stopJumping = false;
-            }
             if (moveLeft)
             {
                 GetComponent<BattleUnit>().attackRange = leftAttackRange;
@@ -105,13 +90,29 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (isJumping)
+        {  // Jumping Process
+            if (!stopJumping)
+            {
+                rigidbody.velocity = new Vector2(0, jumpVelocity += jumpAcceleration * Time.deltaTime);
+                stopJumping = (jumpVelocity >= maxJumpVelocity || !Input.GetKey(KeyCode.Space));
+            }
+            else if (isGounding)
+                isJumping = stopJumping = false;
+        }
+
         animator.SetBool("isRun", isMoving);
         animator.SetBool("isJumping", isJumping);
-        animator.SetBool("isFallDown", rigidbody.velocity.y <= 0.0f);
+        animator.SetBool("isFallDown", rigidbody.velocity.y < 0.0f);
     }
 
-    void OnCollisionStay2D(Collision2D other)
-    {
+    void OnCollisionStay2D(Collision2D other){
+        if(stiffTime > 0.0f && !isRolling)
+            Physics2D.IgnoreLayerCollision(6,7,false);
+
+        if (other.gameObject.tag == "Enemy" && stiffTime > 0.0f)
+            TakeDamage(other.gameObject.GetComponent<BattleUnit>().Atk, true, true);
+    
         if (!isGounding && rigidbody.velocity == new Vector2(0.0f, 0.0f))
         {   // Gounded
             isGounding = true;
@@ -130,6 +131,7 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("Attack");
         attackTime = 0.0f;
         GetComponent<BattleUnit>().PerformAttack();
+        attackAudio.Play();
     }
 
     void Jump()
@@ -145,5 +147,18 @@ public class PlayerController : MonoBehaviour
         isRolling = true;
         rollingSpeed = movementSpeed * (moveLeft ? -3 : 3);
         rollingTime = 0.0f;
+        rollingAudio.Play();
+        Physics2D.IgnoreLayerCollision(6,7,true);
+    }
+
+    public void TakeDamage(int damage, bool pushLeft = false, bool pushUp = false){
+        GetComponent<BattleUnit>().OnDamage(damage);
+        rigidbody.velocity = new Vector2(pushLeft ? -5.0f : 5.0f, rigidbody.velocity.y + (pushUp ? 5.0f : 0.0f));
+        stiffTime = -0.5f;
+        Physics2D.IgnoreLayerCollision(6,7,true);
+    }
+
+    void Dealth(){
+        Debug.Log("died");
     }
 }
