@@ -11,6 +11,7 @@ namespace Feng.Battle
         [SerializeField] HealthBarUI healthBarUI;
         [SerializeField] int maxHp;
         [SerializeField] int currentHp;
+        [SerializeField] string targetTag;
         public int Atk;
 
         float hpPresentage => (float)currentHp / (float)maxHp;
@@ -25,7 +26,7 @@ namespace Feng.Battle
         }
         public void PerformAttack()
         {
-            AttackSystem.instance.PerformAttack(this.Atk, this.attackRange.bounds);
+            AttackSystem.instance.PerformAttack(this.Atk, this.attackRange.bounds, targetTag);
         }
 
         public void OnDamage(int atk)
@@ -44,7 +45,7 @@ namespace Feng.Battle
 
         public void OnDie()
         {
-
+            GameObject.Destroy(this.gameObject);
         }
     }
 

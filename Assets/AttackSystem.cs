@@ -11,13 +11,14 @@ namespace Feng.Battle
             instance = this;
         }
 
-        public void PerformAttack(int atk, Bounds position)
+        public void PerformAttack(int atk, Bounds position, string targetTag)
         {
-            var damagers = FindBattleUnitInRange(position);
+            var damagers = FindBattleUnitInRange(position).Where(damager => damager.tag == targetTag);
             foreach (var damager in damagers)
             {
                 damager.OnDamage(atk);
             }
+            
         }
 
         public BattleUnit[] FindBattleUnitInRange(Bounds bounds)

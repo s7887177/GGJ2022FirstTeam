@@ -206,6 +206,7 @@ MonoBehaviour:
   healthBarUI: {fileID: 9033125078361166288}
   maxHp: 100
   currentHp: 100
+  targetTag: 
   Atk: 10
 --- !u!1 &2975738018765617469
 GameObject:
