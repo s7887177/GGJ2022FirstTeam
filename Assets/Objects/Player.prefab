@@ -204,7 +204,7 @@ MonoBehaviour:
   maxHp: 100
   currentHp: 100
   targetTag: Enemy
-  Atk: 10
+  Atk: 50
 --- !u!1 &4275880773785182309
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 3574166658497544726}
+  image2: {fileID: 0}
   canvas: {fileID: 0}
 --- !u!1 &5647568824480873503
 GameObject:
