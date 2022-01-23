@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Rigidbody2D rigidbody;
 
-    public  Collider2D rightAttackRange;
+    public Collider2D rightAttackRange;
     public Collider2D leftAttackRange;
 
 
@@ -57,17 +57,20 @@ public class PlayerController : MonoBehaviour
         rollingTime += Time.deltaTime;
         attackTime += Time.deltaTime;
 
-        if (isRolling) {
+        if (isRolling)
+        {
             transform.Translate(rollingSpeed * Time.deltaTime, 0, 0);
 
             if (rollingTime > 0.3f)
                 isRolling = false;
         }
-        else {
+        else
+        {
             bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
             bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
 
-            if (isMoving = (moveRight ^ moveLeft)) {
+            if (isMoving = (moveRight ^ moveLeft))
+            {
                 transform.Translate(movementSpeed * (moveLeft ? -1 : 1) * Time.deltaTime, 0, 0);
                 GetComponent<SpriteRenderer>().flipX = moveLeft;
             }
@@ -122,22 +125,25 @@ public class PlayerController : MonoBehaviour
 
 
 
-    void Attack(){
+    void Attack()
+    {
         animator.SetTrigger("Attack");
         attackTime = 0.0f;
         GetComponent<BattleUnit>().PerformAttack();
     }
 
-    void Jump(){
+    void Jump()
+    {
         jumpVelocity = minJumpVelocity;
         isJumping = true;
         isGounding = false;
     }
-    
-    void Roll(bool moveLeft){
+
+    void Roll(bool moveLeft)
+    {
         animator.SetTrigger("Roll");
         isRolling = true;
-        rollingSpeed = movementSpeed*(moveLeft ? -3 : 3);
+        rollingSpeed = movementSpeed * (moveLeft ? -3 : 3);
         rollingTime = 0.0f;
     }
-} 
+}

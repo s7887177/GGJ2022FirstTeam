@@ -22,6 +22,7 @@ namespace Feng.Battle
         }
         void Update()
         {
+            Debug.Log(this.name);
             healthBarUI.UpdateHealthBarUI(hpPresentage);
         }
         public void PerformAttack()
