@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 7381558628999609282}
   - component: {fileID: 3179996656938977640}
   - component: {fileID: 820447719396909295}
+  - component: {fileID: 9114762274135009303}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -188,7 +189,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1.1280661, y: 0.8292451}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.1
 --- !u!114 &820447719396909295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,6 +208,21 @@ MonoBehaviour:
   maxHp: 100
   currentHp: 100
   Atk: 10
+--- !u!114 &9114762274135009303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803904025908976384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec7c57e0501784449959ed3376783d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <stat>k__BackingField: {fileID: 11400000, guid: e0a3ece9bf9ae604d80e3b78c775aba0, type: 2}
+  wanderLeft: 0
+  wanderRight: 5
 --- !u!1 &2975738018765617469
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,6 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 2255871944020426160}
+  canvas: {fileID: 1723519482952131392}
 --- !u!1 &6571774651953169758
 GameObject:
   m_ObjectHideFlags: 0
